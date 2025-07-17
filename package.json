@@ -1,0 +1,9 @@
+
+{
+  "name": "faysal-ahamed-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio with Netlify backend functions.",
+  "dependencies": {
+    "@netlify/neon": "^0.1.2"
+  }
+}

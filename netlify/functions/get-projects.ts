@@ -36,3 +36,27 @@ export default async (req, context) => {
 export const config = {
   path: "/api/get-projects",
 };
+
+
+import { Handler } from '@netlify/functions';
+import { neon } from '@netlify/neon';
+
+// Neon SQL client
+const sql = neon(); // It will use the NETLIFY_DATABASE_URL env var
+
+export const handler: Handler = async (event, context) => {
+  try {
+    // Example query: fetch all projects
+    const projects = await sql`SELECT * FROM projects`;
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ data: projects }),
+    };
+  } catch (error) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: error.message }),
+    };
+  }
+};

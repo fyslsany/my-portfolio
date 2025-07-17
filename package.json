@@ -25,5 +25,4 @@
 "dependencies": {
   "@netlify/functions": "^2.0.0",
   "@netlify/neon": "^0.0.2",
-  ...
 }

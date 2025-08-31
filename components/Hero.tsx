@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
           Faysal Ahamed
         </h1>
         <p className="mt-4 text-xl md:text-2xl text-gray-300 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          Visual Designer & <Typewriter texts={['Brand Strategist', 'UI/UX Expert', 'Creative Thinker']} />
+          Visual Designer | Frontend Developer | AI Enthusiast <Typewriter texts={['Brand Strategist', 'UI/UX Expert', 'Creative Thinker']} />
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <a
